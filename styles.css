@@ -10,35 +10,29 @@ body {
   background-color: #1a001a; /* Darker purple */
 }
 
-/* Gaming-style border (no animation) */
+/* Gaming-style border */
 .gaming-border {
+  position: relative;
+  display: inline-block;
   border: 2px solid #ff9900; /* Outer border color */
   padding: 8px;
   border-radius: 8px;
   background-color: #222; /* Background behind the logo */
-  display: inline-flex; /* Ensure no inline-block animations */
 }
 
-/* Text display adjustments */
 #text-display {
-  font-size: 2rem; /* Adjust font size */
+  font-size: 1rem; /* Adjusted to make the font smaller */
   max-width: 90%; /* Utilize the full available width */
   line-height: 1.2; /* Reduce line spacing */
   padding: 10px; /* Adds space between text and banner edge */
-  overflow-wrap: break-word; /* Breaks long text if needed */
+  word-wrap: break-word; /* Allows long text to wrap within the box */
 }
 
-/* Typing animation effect (only on text, not on the logo) */
-.animate-typewriter {
-  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: yellow; }
+/* Additional styling for the larger input field */
+textarea#user-input {
+  width: 100%; /* Full width within container */
+  max-width: 28rem; /* Adjust max width */
+  height: 6rem; /* Taller height */
+  resize: none; /* Disable resizing */
+  margin-bottom: 1rem; /* Spacing from the button */
 }
