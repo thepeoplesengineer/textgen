@@ -4,10 +4,12 @@
 
 body {
   font-family: 'Press Start 2P', sans-serif;
+  padding-top: 20px; /* Brings down the entire content a bit */
 }
 
 #banner {
   background-color: #1a001a; /* Darker purple */
+  margin-top: 20px; /* Additional space from the top of the page */
 }
 
 /* Gaming-style border */
@@ -21,18 +23,8 @@ body {
 }
 
 #text-display {
-  font-size: 1rem; /* Adjusted to make the font smaller */
-  max-width: 90%; /* Utilize the full available width */
-  line-height: 1.2; /* Reduce line spacing */
-  padding: 10px; /* Adds space between text and banner edge */
-  word-wrap: break-word; /* Allows long text to wrap within the box */
-}
-
-/* Additional styling for the larger input field */
-textarea#user-input {
-  width: 100%; /* Full width within container */
-  max-width: 28rem; /* Adjust max width */
-  height: 6rem; /* Taller height */
-  resize: none; /* Disable resizing */
-  margin-bottom: 1rem; /* Spacing from the button */
+  font-size: 1rem;
+  max-width: 90%;
+  line-height: 1.2;
+  padding: 10px;
 }
